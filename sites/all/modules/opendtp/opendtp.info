@@ -1,0 +1,11 @@
+name = OpenDTP
+description = Permet de lier votre serveur api OpenDTP a drupal
+core = 7.x
+php = 5.x
+configure = admin/config/services/opendtp
+version = 0.42
+
+files[] = opendtp.admin.inc
+files[] = opendtp.install
+files[] = opendtp.module
+files[] = opendtp.php

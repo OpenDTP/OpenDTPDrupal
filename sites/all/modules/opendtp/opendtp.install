@@ -1,0 +1,9 @@
+<?php
+/**
+ * hook_uninstall().
+ */
+function opendtp_uninstall()
+{
+  db_delete('variable')->condition('name', 'opendtp_%', 'LIKE')->execute();
+}
+
