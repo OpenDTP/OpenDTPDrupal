@@ -10,6 +10,7 @@
  */
 function opendtp_admin_settings() 
 {
+  /* test git windows */
   $form['opendtp_key'] = array(
     '#type' => 'textfield',
     '#title' => t('Key'),
