@@ -1,0 +1,73 @@
+
+/* ---------- Color Module Styles ----------- */
+
+body,
+body.overlay {
+  color: #427BB5;
+}
+.comment .comment-arrow {
+  border-color: #ffffff;
+}
+#page
+#main-wrapper {
+  background-color: #427BB5;
+}
+#main-menu-links li a.active {
+  background-color: #399CAE;
+}
+#main-menu-links li.active-trail a {
+  background-color: #417882;
+}
+.tabs ul.primary li a.active {
+  background-color: #ffffff;
+}
+.tabs ul.primary li.active a {
+  background-color: #ffffff;
+  border-bottom: 1px solid #ffffff;
+}
+#header {
+  background-color: #48a9e4;
+  background-image: -moz-linear-gradient(top, #164576 0%, #427BB5 100%);
+  background-image: -ms-linear-gradient(top, #164576 0%, #427BB5 100%);
+  background-image: -o-linear-gradient(top, #164576 0%, #427BB5 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #164576), color-stop(1, #427BB5));
+  background-image: -webkit-linear-gradient(top, #164576 0%, #427BB5 100%);
+  background-image: linear-gradient(top, #164576 0%, #427BB5 100%);
+}
+a {
+  color: #3AB88F;
+}
+a:hover,
+a:focus {
+  color: #6ADCB7;
+}
+a:active {
+  color: #137857;
+}
+.sidebar .block {
+  background-color: #f6f6f2;
+  border-color: #f9f9f9;
+}
+#page-wrapper {
+  background: #427BB5;
+}
+#footer-wrapper {
+  background: #292929;
+}
+#footer-wrapper {
+  background-color: #427BB5;
+  background-image: -moz-linear-gradient(top, #427BB5 0%, #72A5DA 100%);
+  background-image: -ms-linear-gradient(top, #427BB5 0%, #72A5DA 100%);
+  background-image: -o-linear-gradient(top, #427BB5 0%, #72A5DA 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #427BB5), color-stop(1, #72A5DA));
+  background-image: -webkit-linear-gradient(top, #427BB5 0%, #72A5DA 100%);
+  background-image: linear-gradient(top, #427BB5 0%, #72A5DA 100%);
+}
+.region-header,
+.region-header a,
+.region-header li a.active,
+#name-and-slogan,
+#name-and-slogan a,
+#secondary-menu-links li a {
+  color: #fffeff;
+}
