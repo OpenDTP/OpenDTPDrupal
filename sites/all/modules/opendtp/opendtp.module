@@ -57,7 +57,7 @@ function opendtp_menu()
     'type' => MENU_DEFAULT_LOCAL_TASK,
     'weight' => -5,
   );
-    $items['slide'] = array(
+    $items['admin/config/services/opendtp/slide'] = array(
     'title' => 'Slide',
     'page callback' => 'slide_page',
     'access callback' => 'user_access',
@@ -66,20 +66,30 @@ function opendtp_menu()
   return $items;
 }
 
-function opendtp_slide()
-{
-
+/*
+ * Implementation of hook_theme().
+ */
+function opendtp_theme($existing, $type, $theme, $path){
+  return array(
+    'opendtp' => array(
+      'variables' => array('content' => NULL),
+      'template' => 'opendtp',
+      'path' => drupal_get_path('module', 'opendtp') .'/theme'
+    )
+  );
 }
+
 
 /**
  * Page callback
  */
 function opendtp_page()
 {
-  $output = opendtp_slide();
-  return $output;
+	$content = array();
+	// Recuperation dynamique des documents a faire avec l'api
+	
+  return theme('opendtp', $content); // use $content variable in moon.tpl.php template
 }
-
 
 /**
  * Makes a call to the opendtp API.
