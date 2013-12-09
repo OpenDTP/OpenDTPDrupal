@@ -57,7 +57,7 @@ function opendtp_menu()
     'type' => MENU_DEFAULT_LOCAL_TASK,
     'weight' => -5,
   );
-    $items['admin/config/services/opendtp/slidepage'] = array(
+    $items['opendtp/slidepage'] = array(
     'title' => 'Documents Slide',
     'page callback' => 'opendtp_slidepage',
     'access callback' => 'user_access',
