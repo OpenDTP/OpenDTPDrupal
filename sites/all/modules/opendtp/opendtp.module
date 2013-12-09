@@ -39,24 +39,24 @@ function opendtp_permission()
 function opendtp_menu()
 {
  $items = array();
-  // $items['admin/config/services/opendtp'] = array(
-    // 'title' => 'Opendtp',
-    // 'description' => 'Provides configuration options for opendtp.',
-    // 'access arguments' => array('administer opendtp'),
-    // 'page callback' => 'drupal_get_form',
-    // 'page arguments' => array('opendtp_admin_settings'),
-    // 'file' => 'opendtp.admin.inc',
-  // );
-  // $items['admin/config/services/opendtp/general'] = array(
-    // 'title' => 'General',
-    // 'access arguments' => array('administer opendtp'),
-	// 'description' => 'Provides general configuration options for opendtp.',
-    // 'page callback' => 'drupal_get_form',
-    // 'page arguments' => array('opendtp_admin_settings'),
-    // 'file' => 'opendtp.admin.inc',
-    // 'type' => MENU_DEFAULT_LOCAL_TASK,
-    // 'weight' => -5,
-  // );
+  $items['admin/config/services/opendtp'] = array(
+    'title' => 'Opendtp',
+    'description' => 'Provides configuration options for opendtp.',
+    'access arguments' => array('administer opendtp'),
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('opendtp_admin_settings'),
+    'file' => 'opendtp.admin.inc',
+  );
+  $items['admin/config/services/opendtp/general'] = array(
+    'title' => 'General',
+    'access arguments' => array('administer opendtp'),
+	'description' => 'Provides general configuration options for opendtp.',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('opendtp_admin_settings'),
+    'file' => 'opendtp.admin.inc',
+    'type' => MENU_DEFAULT_LOCAL_TASK,
+    'weight' => -5,
+  );
     $items['admin/config/services/opendtp/slide'] = array(
     'title' => 'Slide',
     'page callback' => 'slide_page',
