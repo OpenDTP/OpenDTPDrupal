@@ -62,6 +62,7 @@ function opendtp_menu()
     'page callback' => 'opendtp_slidepage',
     'access callback' => 'user_access',
     'access argument' => array('access nodes'),
+	'type' => MENU_NORMAL_ITEM,
   );
   return $items;
 }
