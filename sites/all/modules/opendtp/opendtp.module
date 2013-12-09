@@ -83,7 +83,7 @@ function opendtp_theme($existing, $type, $theme, $path){
 /**
  * Page callback
  */
-function opendtp_page()
+function slide_page()
 {
 	$content = array();
 	// Recuperation dynamique des documents a faire avec l'api
