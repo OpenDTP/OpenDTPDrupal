@@ -88,8 +88,8 @@ function opendtp_page()
 {
 	$content = array();
 	// Recuperation dynamique des documents a faire avec l'api
-	$content[0] = "TEST"
-  //return theme('opendtp', $content); 
+	$content[0] = "TEST";
+  return theme('opendtp', $content); 
 }
 
 /**
