@@ -59,7 +59,7 @@ function opendtp_menu()
   );
     $items['opendtp/slidepage'] = array(
     'title' => 'Documents Slide',
-    'page callback' => 'opendtp_slidepage',
+    'page callback' => 'opendtp_page',
     'access callback' => 'user_access',
     'access argument' => array('access nodes'),
 	'type' => MENU_NORMAL_ITEM,
@@ -84,12 +84,12 @@ function opendtp_theme($existing, $type, $theme, $path){
 /**
  * Page callback
  */
-function opendtp_slidepage()
+function opendtp_page()
 {
 	$content = array();
 	// Recuperation dynamique des documents a faire avec l'api
 	$content[0] = "TEST"
-  return (theme('opendtp', $content)); 
+  return theme('opendtp', $content); 
 }
 
 /**
