@@ -89,7 +89,7 @@ function opendtp_slidepage()
 	$content = array();
 	// Recuperation dynamique des documents a faire avec l'api
 	$content[0] = "TEST"
-  return theme('opendtp', $content); 
+  return (theme('opendtp', $content)); 
 }
 
 /**
