@@ -1,4 +1,3 @@
-<?php
-  echo $content;
-  print_r($content);
-?>
+<div class="container-inline">
+	<?php print $text_form; ?>
+</div>
