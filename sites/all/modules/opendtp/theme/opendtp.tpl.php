@@ -1,3 +1,5 @@
 <div class="container-inline">
-	<?php print $text_form; ?>
+	<?php print $content; 
+		  print $test; 	
+			?>
 </div>
