@@ -1,3 +1,4 @@
 <?php
-  $content
+  echo $content;
+  print_r($content);
 ?>
