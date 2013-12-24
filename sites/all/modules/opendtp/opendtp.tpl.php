@@ -4,7 +4,6 @@
 		<meta charset="utf-8" />
 		<title>ImageFlow</title>
 		<meta name="robots" content="index, follow, noarchive" />
-		<link rel="stylesheet" href=<?php echo $module_path; ?>/style.css type="text/css" />
 
 		<!-- This includes the ImageFlow CSS and JavaScript -->
 		<link rel="stylesheet" href=<?php echo $module_path; ?>/imageflow.packed.css type="text/css" />
