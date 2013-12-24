@@ -7,16 +7,13 @@
 
 		<!-- This includes the ImageFlow CSS and JavaScript -->
 		<link rel="stylesheet" href=<?php echo $module_path; ?>/imageflow.packed.css type="text/css" />
-		<script type="text/javascript" src=<?php echo $module_path; ?>/imageflow.packed.js></script>
+		<script type="text/javascript" src=<?php echo $module_path; ?>/imageflow.js></script>
 
 	</head>
 	<body>
-		<h1>ImageFlow</h1>
-
-		<!-- This is all the XHTML ImageFlow needs -->
 		<div id="myImageFlow" class="imageflow">
 			<img src=<?php echo $module_path; ?>/img/img1.png longdesc=<?php echo $module_path; ?>/img/img1.png width="400" height="300" alt="Image 1" />
-			
+		
 		</div>
 
 	</body>
