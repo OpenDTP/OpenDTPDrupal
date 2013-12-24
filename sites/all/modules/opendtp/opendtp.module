@@ -89,8 +89,13 @@ function opendtp_theme($existing, $type, $theme, $path)
  */
 function opendtp_page()
 {
-  string $module_path = drupal_get_path('module', 'opendtp');
-  return theme('opendtp', $module_path);
+  $module_path = drupal_get_path('module', 'opendtp');
+  $content = "";
+  $variables = array(
+    'module_path' => $module_path,
+    'content' => $content
+);
+  return theme('opendtp', $variables);
 }
 
 /**
