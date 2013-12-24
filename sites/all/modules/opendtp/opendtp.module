@@ -90,7 +90,7 @@ function opendtp_theme($existing, $type, $theme, $path)
 function opendtp_page()
 {
   $module_path = drupal_get_path('module', 'opendtp');
-  $content = "";
+  $content = "Maintenant faut regler ImageFlow ><";
   $variables = array(
     'module_path' => $module_path,
     'content' => $content

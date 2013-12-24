@@ -13,7 +13,10 @@
 	<body>
 		<div id="myImageFlow" class="imageflow">
 			<img src=<?php echo $module_path; ?>/img/img1.png longdesc=<?php echo $module_path; ?>/img/img1.png width="400" height="300" alt="Image 1" />
-		
+			<br/>
+			<?php
+				echo $content;
+			?>
 		</div>
 
 	</body>
