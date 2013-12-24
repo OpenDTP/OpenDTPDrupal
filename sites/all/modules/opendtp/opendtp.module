@@ -90,7 +90,7 @@ function opendtp_theme($existing, $type, $theme, $path)
 function opendtp_page()
 {
 
-	$content = "TEST";
+	$content = 'TEST';
   return theme('opendtp', $content);
 }
 
