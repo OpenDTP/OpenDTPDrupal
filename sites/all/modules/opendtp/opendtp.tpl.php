@@ -1,5 +1,4 @@
-<div class="container-inline">
-	<?php print $content; 
-		  print $test; 	
-			?>
-</div>
+TEST
+<?php
+echo $content
+?>
