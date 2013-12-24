@@ -79,8 +79,7 @@ function opendtp_theme($existing, $type, $theme, $path)
     'opendtp' => array(
       'variables' => array('content' => NULL),
       'template' => 'opendtp',
-      'path' => drupal_get_path('module', 'opendtp') .'/theme'
-    )
+    ),
   );
 }
 
@@ -91,9 +90,7 @@ function opendtp_theme($existing, $type, $theme, $path)
 function opendtp_page()
 {
 
-	$content = array();
-	// Recuperation dynamique des documents a faire avec l'api
-	$content[0] = "TEST";
+	$content = "TEST";
   return theme('opendtp', $content);
 }
 
