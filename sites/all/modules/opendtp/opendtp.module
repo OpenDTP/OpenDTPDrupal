@@ -90,7 +90,7 @@ function opendtp_theme($existing, $type, $theme, $path)
  */
 function opendtp_page()
 {
-
+  return 'test';
 	$content = array();
 	// Recuperation dynamique des documents a faire avec l'api
 	$content[0] = "TEST";
