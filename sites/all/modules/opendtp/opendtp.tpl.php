@@ -6,7 +6,7 @@
 		<meta name="robots" content="index, follow, noarchive" />
 
 		<!-- This includes the ImageFlow CSS and JavaScript -->
-		<link rel="stylesheet" href=<?php echo $module_path; ?>/imageflow.css type="text/css" />
+		<link rel="stylesheet" href=<?php echo $module_path; ?>/imageflow.packed.css type="text/css" />
 		<script type="text/javascript" src=<?php echo $module_path; ?>/imageflow.js></script>
 
 	</head>
