@@ -86,7 +86,7 @@ function opendtp_theme($existing, $type, $theme, $path)
  */
 function opendtp_page()
 {
-  return theme('opendtp');
+  return theme('opendtp', $variables);
 }
 
 function opendtp_theme_preprocess_page(&$variables)
