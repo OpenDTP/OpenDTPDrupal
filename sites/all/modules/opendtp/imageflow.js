@@ -151,7 +151,7 @@ function ImageFlow ()
 				{
 					version = (my.reflectionPNG) ? '3' : '2';
 					src = my.imagePath+node.getAttribute('src',2);
-					src = 'sites/all/modules/opendtp/'+'reflect'+version+'.php?img='+src+my.reflectionGET;
+
 					node.setAttribute('src',src);
 				}
 
