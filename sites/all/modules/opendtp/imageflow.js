@@ -41,7 +41,7 @@ function ImageFlow ()
 	{
 		animationSpeed:     50,             /* Animation speed in ms */
 		aspectRatio:        1.964,          /* Aspect ratio of the ImageFlow container (width divided by height) */
-		buttons:            false,          /* Toggle navigation buttons */
+		buttons:            true,          /* Toggle navigation buttons */
 		captions:           true,           /* Toggle captions */
 		circular:           false,          /* Toggle circular rotation */
 		imageCursor:        'default',      /* Cursor type for all images - default is 'default' */
@@ -58,7 +58,7 @@ function ImageFlow ()
 		percentLandscape:   118,            /* Scale landscape format */
 		percentOther:       100,            /* Scale portrait and square format */
 		preloadImages:      true,           /* Toggles loading bar (false: requires img attributes height and width) */
-		reflections:        true,           /* Toggle reflections */
+		reflections:        false,           /* Toggle reflections */
 		reflectionGET:      '',             /* Pass variables via the GET method to the reflect_.php script */
 		reflectionP:        0.5,            /* Height of the reflection in percent of the source image */
 		reflectionPNG:      false,          /* Toggle reflect2.php or reflect3.php */
@@ -151,7 +151,7 @@ function ImageFlow ()
 				{
 					version = (my.reflectionPNG) ? '3' : '2';
 					src = my.imagePath+node.getAttribute('src',2);
-
+					src = 'sites/all/modules/opendtp/'+'reflect'+version+'.php?img='+src+my.reflectionGET;
 					node.setAttribute('src',src);
 				}
 
