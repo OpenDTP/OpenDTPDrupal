@@ -92,7 +92,7 @@ function opendtp_page()
   $content[2] = "<img src=\"http://ref46.guerau_g.thor.opendtp.net/sites/all/modules/opendtp/img/img1.png\" alt=\"Image 1.4\" />";
   $variables = array(
     'module_path' => $module_path,
-    'content' => $content
+    'content' => $content[]
 );
   return theme('opendtp', $variables);
 }
