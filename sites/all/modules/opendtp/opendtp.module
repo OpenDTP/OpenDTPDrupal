@@ -89,6 +89,7 @@ function opendtp_page()
     $variables['module_path'] = drupal_get_path('module', 'opendtp');
   $variables['images'] = array();
   $variables['images'][0] = "<img src=\"http://ref46.guerau_g.thor.opendtp.net/sites/all/modules/opendtp/img/img1.png\" alt=\"Image 1.3\" />";
+  $variables['images'][1] = "<img src=\"http://ref46.guerau_g.thor.opendtp.net/sites/all/modules/opendtp/img/img1.png\" alt=\"Image 1.4\" />";
   
   return theme('opendtp', $variables);
 }
