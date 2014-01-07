@@ -75,7 +75,7 @@ function opendtp_theme($existing, $type, $theme, $path)
   return array(
     'opendtp' => array(
       'variables' => array('content' => NULL),
-      'template' => 'opendtp',
+      'template' => '/templates/blocks/opendtp_slide',
     ),
   );
 }
@@ -103,17 +103,6 @@ function opendtp_block_view($name)
 		$block['content'] = theme('opendtp', $variables);
 		return $block;
 	}
-}
-
-
-/**
- * Page callback
- */
-function opendtp_page()
-{
-  // Get module's current path and adds it to the page $variables for the css/js
-  $variables['module_path'] = drupal_get_path('module', 'opendtp');
-  return theme('opendtp', $variables);
 }
 
 
