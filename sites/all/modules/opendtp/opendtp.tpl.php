@@ -16,8 +16,8 @@
 			<img src=<?php echo $module_path; ?>/img/img1.png alt="Image 1.2" />
 			<br/>
 			<?php
-				foreach ($images as $img)
-					echo $img;
+/* 				foreach ($images as $img)
+					echo $img; */
 			?>
 		</div>
 
