@@ -113,6 +113,7 @@ function opendtp_page()
 {
   // Get module's current path and adds it to the page $variables for the css/js
   $variables['module_path'] = drupal_get_path('module', 'opendtp');
+  $variables['images'] = array();
   return theme('opendtp', $variables);
 }
 
