@@ -75,7 +75,8 @@ function opendtp_theme($existing, $type, $theme, $path)
   return array(
     'opendtp' => array(
       'variables' => array('content' => NULL),
-      'template' => '/templates/blocks/opendtp_slide',
+      'template' => 'opendtp_slide',
+	  'path' => drupal_get_path('module', 'opendtp').'/templates/blocks'
     ),
   );
 }
