@@ -12,8 +12,6 @@
 	</head>
 	<body>
 		<div id="myImageFlow" class="imageflow">
-			<img src=<?php echo $module_path; ?>/img/img1.png width="400" height="300" alt="Image 1" />
-			<img src=<?php echo $module_path; ?>/img/img1.png alt="Image 1.2" />
 			<br/>
 			<?php
 /* 				foreach ($images as $img)
