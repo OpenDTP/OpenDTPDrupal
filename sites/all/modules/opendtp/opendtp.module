@@ -38,6 +38,7 @@ function opendtp_permission()
  */
 function opendtp_menu()
 {
+ $items = array();
   $items['admin/config/services/opendtp'] = array(
     'title' => 'Opendtp',
     'description' => 'Provides configuration options for opendtp.',
@@ -49,15 +50,55 @@ function opendtp_menu()
   $items['admin/config/services/opendtp/general'] = array(
     'title' => 'General',
     'access arguments' => array('administer opendtp'),
-	'description' => 'Provides general configuration options for opendtp.',
+    'description' => 'Provides general configuration options for opendtp.',
     'page callback' => 'drupal_get_form',
     'page arguments' => array('opendtp_admin_settings'),
     'file' => 'opendtp.admin.inc',
     'type' => MENU_DEFAULT_LOCAL_TASK,
     'weight' => -5,
   );
-  return $items;
+ $items;
 }
+
+/*
+ * Implementation of hook_theme().
+ */
+function opendtp_theme($existing, $type, $theme, $path)
+{
+  return array(
+    'opendtp' => array(
+      'variables' => array('content' => NULL),
+      'template' => 'opendtp_slide',
+	  'path' => drupal_get_path('module', 'opendtp').'/templates/blocks'
+    ),
+  );
+}
+
+function opendtp_block_info()
+{
+	$blocks = array ();
+	$blocks['opendtp_slide'] = array (
+	'info' => t('OpenDTP Slide'),
+	'cache' => DRUPAL_NO_CACHE,
+	);
+	return $blocks;
+}
+
+/**
+* Implements hook_block_view().
+*/
+function opendtp_block_view($name)
+{
+	if ($name == 'opendtp_slide')
+	{
+		// Get module's current path and adds it to the page $variables for the css/js
+		$variables['module_path'] = drupal_get_path('module', 'opendtp');
+		$block['subject'] = t('OpenDTP Slide');
+		$block['content'] = theme('opendtp', $variables);
+		return $block;
+	}
+}
+
 
 /**
  * Makes a call to the opendtp API.

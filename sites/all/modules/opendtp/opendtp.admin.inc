@@ -5,9 +5,7 @@
  * Administration forms for the OpenDTP module.
  */
 
-/**
- * Menu callback; Displays the administration settings for Disqus.
- */
+
 function opendtp_admin_settings() 
 {
   $form['opendtp_key'] = array(
