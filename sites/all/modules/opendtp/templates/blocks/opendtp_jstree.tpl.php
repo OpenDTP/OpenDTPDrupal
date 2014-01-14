@@ -5,7 +5,7 @@
 		<link rel="stylesheet" href=<?php echo $module_path; ?>/jstree/dist/themes/default/style.min.css />
 	</head>
 	<body>
-		<div id="jstree_display"><div>
+		<div id="jstree"><div>
 			<ul>
 			  <li>Root
 				<ul>
