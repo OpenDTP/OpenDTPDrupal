@@ -65,24 +65,26 @@ function opendtp_menu()
  */
 function opendtp_slide_theme($existing, $type, $theme, $path)
 {
-  return array(
-    'opendtp' => array(
-      'variables' => array('content' => NULL),
-      'template' => 'opendtp_slide',
-	  'path' => drupal_get_path('module', 'opendtp').'/templates/blocks'
-    ),
-  );
-}
-
-function opendtp_jstree_theme($existing, $type, $theme, $path)
-{
-  return array(
-    'opendtp' => array(
-      'variables' => array('content' => NULL),
-      'template' => 'opendtp_jstree',
-	  'path' => drupal_get_path('module', 'opendtp').'/templates/blocks'
-    ),
-  );
+	if ($existing == 'opendtp_slide')
+	{
+	  return array(
+		'opendtp' => array(
+		  'variables' => array('content' => NULL),
+		  'template' => 'opendtp_slide',
+		  'path' => drupal_get_path('module', 'opendtp').'/templates/blocks'
+		),
+	  );
+	}
+	else if ($existing == 'opendtp_jstree')
+	{
+	  return array(
+		'opendtp' => array(
+		  'variables' => array('content' => NULL),
+		  'template' => 'opendtp_jstree',
+		  'path' => drupal_get_path('module', 'opendtp').'/templates/blocks'
+		),
+	  );
+	}
 }
 
 function opendtp_block_info()
