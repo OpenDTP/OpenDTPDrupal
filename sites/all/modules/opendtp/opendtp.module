@@ -65,6 +65,7 @@ function opendtp_menu()
  */
 function opendtp_slide_theme($existing, $type, $theme, $path)
 {
+	debug($existing);
 	if ($existing == 'opendtp_slide')
 	{
 	  return array(
