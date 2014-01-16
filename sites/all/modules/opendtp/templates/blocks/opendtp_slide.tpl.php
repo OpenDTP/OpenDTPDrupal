@@ -14,6 +14,5 @@
 					echo $img; */
 			?>
 		</div>
-
 	</body>
 </html>

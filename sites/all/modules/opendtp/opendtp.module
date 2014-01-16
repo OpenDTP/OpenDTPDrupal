@@ -57,7 +57,7 @@ function opendtp_menu()
     'type' => MENU_DEFAULT_LOCAL_TASK,
     'weight' => -5,
   );
- $items;
+ return $items;
 }
 
 /*
@@ -65,13 +65,18 @@ function opendtp_menu()
  */
 function opendtp_theme($existing, $type, $theme, $path)
 {
-  return array(
-    'opendtp' => array(
-      'variables' => array('content' => NULL),
-      'template' => 'opendtp_slide',
-	  'path' => drupal_get_path('module', 'opendtp').'/templates/blocks'
-    ),
-  );
+	  return array(
+		'opendtp_slide' => array(
+		  'variables' => array('content' => NULL),
+		  'template' => 'opendtp_slide',
+		  'path' => drupal_get_path('module', 'opendtp').'/templates/blocks'
+		),
+		'opendtp_jstree' => array(
+		  'variables' => array('content' => NULL),
+		  'template' => 'opendtp_jstree',
+		  'path' => drupal_get_path('module', 'opendtp').'/templates/blocks'
+		),
+	  );
 }
 
 function opendtp_block_info()
@@ -79,6 +84,10 @@ function opendtp_block_info()
 	$blocks = array ();
 	$blocks['opendtp_slide'] = array (
 	'info' => t('OpenDTP Slide'),
+	'cache' => DRUPAL_NO_CACHE,
+	);
+	$blocks['opendtp_jstree'] = array (
+	'info' => t('OpenDTP JSTree'),
 	'cache' => DRUPAL_NO_CACHE,
 	);
 	return $blocks;
@@ -94,7 +103,15 @@ function opendtp_block_view($name)
 		// Get module's current path and adds it to the page $variables for the css/js
 		$variables['module_path'] = drupal_get_path('module', 'opendtp');
 		$block['subject'] = t('OpenDTP Slide');
-		$block['content'] = theme('opendtp', $variables);
+		$block['content'] = theme('opendtp_slide', $variables);
+		return $block;
+	}
+	else if ($name == 'opendtp_jstree')
+	{
+		// Get module's current path and adds it to the page $variables for the css/js
+		$variables['module_path'] = drupal_get_path('module', 'opendtp');
+		$block['subject'] = t('OpenDTP JSTree');
+		$block['content'] = theme('opendtp_jstree', $variables);
 		return $block;
 	}
 }
