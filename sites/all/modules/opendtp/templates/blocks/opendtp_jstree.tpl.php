@@ -42,7 +42,7 @@
     </ul>
   </div>
                 <?php 
-              foreach ($query as $key) 
+              foreach ($query['master'] as $key) 
                 {
                   echo "key" . $key;
                   print_r($key);
