@@ -28,8 +28,7 @@
   </div>
   <?php
     foreach ($query as $key)
-      foreach (array_keys($key) as $k) 
-        echo $k + "<br>";
+      echo $key;
   ?>
   <script src=<?php echo $module_path; ?>/jstree/dist/libs/jquery.js></script>
   <script src=<?php echo $module_path; ?>/jstree/dist/jstree.min.js></script>
