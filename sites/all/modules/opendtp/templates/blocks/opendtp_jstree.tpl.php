@@ -42,9 +42,8 @@
     </ul>
   </div>
                 <?php 
-              foreach ($query as $key) 
-                {echo "title" . $key->title;
-                  echo "type" . $key->type;
+              foreach ($query->title as $key) 
+                {
                   echo "key" . $key;
                   print_r($key);
             }
