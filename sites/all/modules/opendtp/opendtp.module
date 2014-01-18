@@ -111,9 +111,7 @@ function opendtp_block_view($name)
      ->fields('n', array('title', 'type'));
     $result = $query->execute();
     foreach ($result as $row)
-    {
       $variables['query'] = $row;
-    }
 		$block['subject'] = t('OpenDTP JSTree');
 		$block['content'] = theme('opendtp_jstree', $variables);
 		return $block;

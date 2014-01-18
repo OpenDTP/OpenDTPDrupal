@@ -36,6 +36,7 @@
     </ul>
   </div>
               <?php
+              echo "<li>" + $query->type + "</li>";
                 echo "<li>" + $query->title + "</li>";
              ?>
   <script src=<?php echo $module_path; ?>/jstree/dist/libs/jquery.js></script>
