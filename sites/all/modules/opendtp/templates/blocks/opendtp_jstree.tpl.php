@@ -10,11 +10,30 @@
     <ul>
       <li>Root
         <ul>
+          <li>Article
+            <ul>
+              <?php 
+              foreach ($query as $key) 
+                if ($key->type === "article")
+                 echo "<li>" . $key->title . "</li>";
+              ?>
+            </ul>
+          </li>
           <li>Master
             <ul>
-               <?php 
-                if ($query->type === "master")
-                 echo "<li>" . $query->title . "</li>";
+              <?php 
+              foreach ($query as $key) 
+                if ($key->type === "master")
+                 echo "<li>" . $key->title . "</li>";
+              ?>
+            </ul>
+          </li>
+          <li>Page
+            <ul>
+              <?php 
+              foreach ($query as $key) 
+                if ($key->type === "page")
+                 echo "<li>" . $key->title . "</li>";
               ?>
             </ul>
           </li>
@@ -22,9 +41,6 @@
       </li>
     </ul>
   </div>
-  <ul>
-  <?php echo "<li>" . $query->title . "</li>"; ?>
-  </ul>
   <script src=<?php echo $module_path; ?>/jstree/dist/libs/jquery.js></script>
   <script src=<?php echo $module_path; ?>/jstree/dist/jstree.min.js></script>
   <script>
