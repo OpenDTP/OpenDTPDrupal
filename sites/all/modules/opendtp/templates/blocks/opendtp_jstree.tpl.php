@@ -13,9 +13,11 @@
           <li>Article
             <ul>
               <?php 
+              print_r($query);
+              print_r($query->type);
               foreach ($query->type as $key) 
                 if ($key === "article")
-                 echo "<li>" . $query->title . "</li>";
+                 echo "<li>" . $key->title . "</li>";
               ?>
             </ul>
           </li>
