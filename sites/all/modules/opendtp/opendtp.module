@@ -107,7 +107,7 @@ function opendtp_block_view($name)
 	}
 	else if ($name == 'opendtp_jstree')
 	{
-    $result = db_query("SELECT * FROM {node}");
+    $result = db_query('SELECT nid FROM node WHERE title = :mytitle', array(':mytitle' => $myNewTitle))->fetchField();
     foreach ($result as $row)
       $variables['query'] = $row;
 		$block['subject'] = t('OpenDTP JSTree');
