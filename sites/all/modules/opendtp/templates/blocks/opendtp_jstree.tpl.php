@@ -27,7 +27,6 @@
     </ul>
   </div>
   <?php
-    foreach ($query as $key)
       echo $key;
   ?>
   <script src=<?php echo $module_path; ?>/jstree/dist/libs/jquery.js></script>
