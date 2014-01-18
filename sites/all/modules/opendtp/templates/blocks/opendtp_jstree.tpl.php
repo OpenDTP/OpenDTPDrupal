@@ -43,9 +43,9 @@
   </div>
                 <?php 
               foreach ($query as $key) 
-                {echo  $key->title;
-                  echo  $key->type;
-                  echo  $key;
+                {echo "title" . $key->title;
+                  echo "type" . $key->type;
+                  echo "key" . $key;
                   print_r($key);
             }
               ?>
