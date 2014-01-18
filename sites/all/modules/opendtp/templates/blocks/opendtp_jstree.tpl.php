@@ -27,7 +27,7 @@
     </ul>
   </div>
   <?php
-      echo $key;
+      echo $query;
   ?>
   <script src=<?php echo $module_path; ?>/jstree/dist/libs/jquery.js></script>
   <script src=<?php echo $module_path; ?>/jstree/dist/jstree.min.js></script>
