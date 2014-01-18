@@ -13,11 +13,9 @@
           <li>Article
             <ul>
               <?php 
-              var_dump($query);
-              print_r($query->type);
-              foreach ($query->type as $key) 
+              foreach ($query as $key) 
                 if ($key === "article")
-                 echo "<li>" . $key->title . "</li>";
+                 echo "<li>" . $query->title . "</li>";
               ?>
             </ul>
           </li>
@@ -43,6 +41,14 @@
       </li>
     </ul>
   </div>
+                <?php 
+              foreach ($query as $key) 
+                {echo  $key->title;
+                  echo  $key->type;
+                  echo  $key;
+                  print_r($key);
+            }
+              ?>
   <script src=<?php echo $module_path; ?>/jstree/dist/libs/jquery.js></script>
   <script src=<?php echo $module_path; ?>/jstree/dist/jstree.min.js></script>
   <script>
