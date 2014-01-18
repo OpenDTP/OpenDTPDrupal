@@ -39,7 +39,7 @@
               echo $query->type;
                 echo $query->title;
              ?>
-  <script src=<?php echo $module_path; ?>/jstree/dist/libs/jquery.js></script>
+ <!-- <script src=<?php echo $module_path; ?>/jstree/dist/libs/jquery.js></script>
   <script src=<?php echo $module_path; ?>/jstree/dist/jstree.min.js></script>
   <script>
   $(function ()
@@ -50,6 +50,6 @@
       console.log(data.selected);
     });
   });
-  </script>
+  </script> -->
 </body>
 </html>
