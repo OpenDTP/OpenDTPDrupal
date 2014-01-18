@@ -29,7 +29,7 @@
   <?php
     foreach ($query as $key)
     {
-      echo $key['type'] + "</br>";
+      echo $key['type'] + "<br>";
       echo $key['title'];
     }
   ?>
