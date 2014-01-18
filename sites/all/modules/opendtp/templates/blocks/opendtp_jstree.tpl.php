@@ -42,9 +42,7 @@
     </ul>
   </div>
                 <?php 
-                print_r($query);
-              foreach ($query['master'] as $key) 
-                  echo "key" . $key;
+                echo $query['master'];
               ?>
   <script src=<?php echo $module_path; ?>/jstree/dist/libs/jquery.js></script>
   <script src=<?php echo $module_path; ?>/jstree/dist/jstree.min.js></script>
