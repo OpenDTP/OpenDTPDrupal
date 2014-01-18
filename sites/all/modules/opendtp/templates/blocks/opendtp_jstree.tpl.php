@@ -11,20 +11,26 @@
       <li>Root
         <ul>
           <li>Article</li>
+          <ul>
             <?php
               if ($query->type == "article")
-                echo "<ul>" + $query->title + "</ul>";
+                echo "<li>" + $query->title + "</li>";
              ?>
+          </ul>
           <li>Page</li>
+          <ul>
             <?php
               if ($query->type == "page")
-                echo "<ul>" + $query->title + "</ul>";
+                echo "<li>" + $query->title + "</li>";
              ?>
+          </ul>
           <li>Master</li>
+          <ul>
             <?php
               if ($query->type == "master")
-                echo "<ul>" + $query->title + "</ul>";
+                echo "<li>" + $query->title + "</li>";
              ?>
+          </ul>
         </ul>
       </li>
     </ul>
