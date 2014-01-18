@@ -41,8 +41,12 @@
       </li>
     </ul>
   </div>
-                <?php 
-                echo $query['master'];
+                <?php
+                foreach ($query['master'] as $key)
+                {
+                echo $key;
+                 } 
+                
               ?>
   <script src=<?php echo $module_path; ?>/jstree/dist/libs/jquery.js></script>
   <script src=<?php echo $module_path; ?>/jstree/dist/jstree.min.js></script>
