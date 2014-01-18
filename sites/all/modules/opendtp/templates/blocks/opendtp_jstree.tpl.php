@@ -14,21 +14,21 @@
           <ul>
             <?php
               if ($query->type === "article")
-                echo "<li>" + $query->title + "</li>";
+               <li>echo $query->title;</li>
              ?>
           </ul>
           <li>Page</li>
           <ul>
             <?php
               if ($query->type === "page")
-                echo "<li>" + $query->title + "</li>";
+              <li>echo $query->title;</li>
              ?>
           </ul>
           <li>Master</li>
           <ul>
             <?php
               if ($query->type === "master")
-                echo "<li>" + $query->title + "</li>";
+               <li>echo $query->title;</li>
              ?>
           </ul>
         </ul>
