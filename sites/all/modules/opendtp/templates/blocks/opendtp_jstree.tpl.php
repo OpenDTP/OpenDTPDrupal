@@ -18,22 +18,6 @@
               ?>
             </ul>
           </li>
-          <li>Page
-            <ul>
-              <?php
-                if ($query->type === "page")
-                  echo "<li>" + $query->title + "</li>";
-               ?>
-            </ul>
-          </li>
-          <li>Master
-            <ul>
-              <?php
-                if ($query->type === "master")
-                  echo "<li>" + $query->title + "</li>";
-               ?>
-            </ul>
-          </li>
         </ul>
       </li>
     </ul>
