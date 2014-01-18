@@ -14,7 +14,7 @@
             <ul>
               <?php 
                 foreach ($query['article'] as $key)
-                 echo "<li>" . $query->title . "</li>";
+                 echo "<li>" . $key . "</li>";
               ?>
             </ul>
           </li>
@@ -22,7 +22,7 @@
             <ul>
               <?php 
                 foreach ($query['master'] as $key)
-                 echo "<li>" . $key->title . "</li>";
+                 echo "<li>" . $key . "</li>";
               ?>
             </ul>
           </li>
@@ -30,7 +30,7 @@
             <ul>
               <?php 
                 foreach ($query['page'] as $key)
-                 echo "<li>" . $key->title . "</li>";
+                 echo "<li>" . $key . "</li>";
               ?>
             </ul>
           </li>
