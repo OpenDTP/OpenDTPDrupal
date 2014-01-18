@@ -11,25 +11,24 @@
       <li>Root
         <ul>
           <li>Article</li>
-          <ul>
-
-          </ul>
+            <?php
+              if ($query->type == "article")
+                echo "<ul>" + $query->title + "</ul>";
+             ?>
           <li>Page</li>
-          <ul>
-          
-          </ul>
+            <?php
+              if ($query->type == "page")
+                echo "<ul>" + $query->title + "</ul>";
+             ?>
           <li>Master</li>
-          <ul>
-          
-          </ul>
+            <?php
+              if ($query->type == "master")
+                echo "<ul>" + $query->title + "</ul>";
+             ?>
         </ul>
       </li>
     </ul>
   </div>
-  <?php
-      if ($query->type == "master")
-        echo $query->title;
-  ?>
   <script src=<?php echo $module_path; ?>/jstree/dist/libs/jquery.js></script>
   <script src=<?php echo $module_path; ?>/jstree/dist/jstree.min.js></script>
   <script>
