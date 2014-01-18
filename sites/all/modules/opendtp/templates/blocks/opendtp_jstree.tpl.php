@@ -3,13 +3,10 @@
 <head>
   <meta charset="utf-8">
   <title>jsTree test</title>
-  <!-- 2 load the theme CSS file -->
 		<link rel="stylesheet" href=<?php echo $module_path; ?>/jstree/dist/themes/default/style.min.css />
 </head>
 <body>
-  <!-- 3 setup a container element -->
   <div id="jstree">
-    <!-- in this example the tree is populated from inline HTML -->
     <ul>
       <li>Root node 1
         <ul>
@@ -21,7 +18,9 @@
     </ul>
   </div>
   <button>demo button</button>
-
+  <?php
+    echo $variables
+  ?>
   <script src=<?php echo $module_path; ?>/jstree/dist/libs/jquery.js></script>
   <script src=<?php echo $module_path; ?>/jstree/dist/jstree.min.js></script>
   <script>
