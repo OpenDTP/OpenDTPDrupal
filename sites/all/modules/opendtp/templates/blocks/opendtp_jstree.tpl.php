@@ -14,32 +14,28 @@
           <ul>
             <?php
               if ($query->type === "article")
-                echo $query->title;
+                echo "<li>" + $query->title + "</li>";
              ?>
           </ul>
           <li>Page</li>
           <ul>
             <?php
               if ($query->type === "page")
-                echo $query->title;
+                echo "<li>" + $query->title + "</li>";
              ?>
           </ul>
           <li>Master</li>
           <ul>
             <?php
               if ($query->type === "master")
-                echo $query->title;
+                echo "<li>" + $query->title + "</li>";
              ?>
           </ul>
         </ul>
       </li>
     </ul>
   </div>
-              <?php
-              echo $query->type;
-                echo $query->title;
-             ?>
- <!-- <script src=<?php echo $module_path; ?>/jstree/dist/libs/jquery.js></script>
+  <script src=<?php echo $module_path; ?>/jstree/dist/libs/jquery.js></script>
   <script src=<?php echo $module_path; ?>/jstree/dist/jstree.min.js></script>
   <script>
   $(function ()
@@ -50,6 +46,6 @@
       console.log(data.selected);
     });
   });
-  </script> -->
+  </script>
 </body>
 </html>
