@@ -107,7 +107,9 @@ function opendtp_block_view($name)
 	}
 	else if ($name == 'opendtp_jstree')
 	{
-    $result = db_query("SELECT title FROM node WHERE type ='master'");
+    $query = db_select('node', 'n')
+     ->fields('n', array('title', 'type'));
+    $result = $query->execute();
     foreach ($result as $row)
       $variables['query'] = $row;
 		$block['subject'] = t('OpenDTP JSTree');
