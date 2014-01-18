@@ -13,8 +13,7 @@
           <li>Article
             <ul>
               <?php 
-              foreach ($query as $key) 
-                if ($key === "article")
+                foreach ($query['article'] as $key)
                  echo "<li>" . $query->title . "</li>";
               ?>
             </ul>
@@ -22,8 +21,7 @@
           <li>Master
             <ul>
               <?php 
-              foreach ($query as $key) 
-                if ($key->type === "master")
+                foreach ($query['master'] as $key)
                  echo "<li>" . $key->title . "</li>";
               ?>
             </ul>
@@ -31,8 +29,7 @@
           <li>Page
             <ul>
               <?php 
-              foreach ($query as $key) 
-                if ($key->type === "page")
+                foreach ($query['page'] as $key)
                  echo "<li>" . $key->title . "</li>";
               ?>
             </ul>
@@ -41,15 +38,6 @@
       </li>
     </ul>
   </div>
-                <?php
-                foreach ($query['master'] as $key)
-                {
-                echo $key;
-                 } 
-                 print_r($query['master']) ;
-                 echo '\n';
-                 print_r($query)  ;              
-              ?>
   <script src=<?php echo $module_path; ?>/jstree/dist/libs/jquery.js></script>
   <script src=<?php echo $module_path; ?>/jstree/dist/jstree.min.js></script>
   <script>
