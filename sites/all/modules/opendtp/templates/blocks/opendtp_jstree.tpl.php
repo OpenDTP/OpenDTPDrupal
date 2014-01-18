@@ -13,7 +13,7 @@
           <li>Article
             <ul>
               <?php 
-              print_r($query);
+              var_dump($query);
               print_r($query->type);
               foreach ($query->type as $key) 
                 if ($key === "article")
