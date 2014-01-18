@@ -19,7 +19,7 @@
   </div>
   <button>demo button</button>
   <?php
-    foreach ($variables as $key) 
+    foreach ($query as $key) 
       echo $key
   ?>
   <script src=<?php echo $module_path; ?>/jstree/dist/libs/jquery.js></script>
