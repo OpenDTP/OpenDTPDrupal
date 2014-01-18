@@ -38,7 +38,7 @@
   <script src=<?php echo $module_path; ?>/jstree/dist/libs/jquery.js></script>
   <script src=<?php echo $module_path; ?>/jstree/dist/jstree.min.js></script>
   <script>
-  $(function ()
+  $(function onAfterLoad()
   {
     $('#jstree').jstree();
     $('#jstree').on("changed.jstree", function (e, data)
