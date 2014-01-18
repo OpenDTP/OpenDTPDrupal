@@ -110,7 +110,7 @@ function opendtp_block_view($name)
 	{
     $result = db_query("SELECT n.nid, n.title FROM {node} n WHERE n.type = 'page'");
     $items = array();
-    while ($row = db_fetch_object($result))
+    foreach ($result as $row)
       $variables[] = l($row->title, "node/{$row->nid}");
 		$block['subject'] = t('OpenDTP JSTree');
 		$block['content'] = theme('opendtp_jstree', $variables);
