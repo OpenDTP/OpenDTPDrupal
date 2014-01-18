@@ -46,7 +46,9 @@
                 {
                 echo $key;
                  } 
-                
+                 print_r($query['master']) ;
+                 echo '\n';
+                 print_r($query)  ;              
               ?>
   <script src=<?php echo $module_path; ?>/jstree/dist/libs/jquery.js></script>
   <script src=<?php echo $module_path; ?>/jstree/dist/jstree.min.js></script>
