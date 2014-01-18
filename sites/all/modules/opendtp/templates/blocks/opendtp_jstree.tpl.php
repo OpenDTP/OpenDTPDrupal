@@ -10,10 +10,10 @@
     <ul>
       <li>Root
         <ul>
-          <li>Article
+          <li>Master
             <ul>
-              <?php
-                if ($query->type === "article")
+               <?php 
+                if ($query->type === "master")
                  echo "<li>" + $query->title + "</li>";
               ?>
             </ul>
@@ -22,6 +22,9 @@
       </li>
     </ul>
   </div>
+  <ul>
+  <?php echo "<li>" + $query->title + "</li>"; ?>
+  </ul>
   <script src=<?php echo $module_path; ?>/jstree/dist/libs/jquery.js></script>
   <script src=<?php echo $module_path; ?>/jstree/dist/jstree.min.js></script>
   <script>
