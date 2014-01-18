@@ -27,8 +27,11 @@
     </ul>
   </div>
   <?php
-    foreach ($query as $key) 
-      echo $key['type'];
+    foreach ($query as $key)
+    {
+      echo $key['type'] + "</br>";
+      echo $key['title'];
+    }
   ?>
   <script src=<?php echo $module_path; ?>/jstree/dist/libs/jquery.js></script>
   <script src=<?php echo $module_path; ?>/jstree/dist/jstree.min.js></script>
