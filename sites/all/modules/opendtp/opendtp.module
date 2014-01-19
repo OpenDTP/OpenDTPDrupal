@@ -98,18 +98,20 @@ function opendtp_block_info()
 */
 function opendtp_block_view($name)
 {
-	if ($name == 'opendtp_slide')
+  $variables['module_path'] = drupal_get_path('module', 'opendtp');
+  if ($name == 'opendtp_slide')
 	{
-		// Get module's current path and adds it to the page $variables for the css/js
-		$variables['module_path'] = drupal_get_path('module', 'opendtp');
 		$block['subject'] = t('OpenDTP Slide');
 		$block['content'] = theme('opendtp_slide', $variables);
 		return $block;
 	}
 	else if ($name == 'opendtp_jstree')
 	{
-		// Get module's current path and adds it to the page $variables for the css/js
-		$variables['module_path'] = drupal_get_path('module', 'opendtp');
+    $query = db_select('node', 'n')
+     ->fields('n', array('title', 'type'));
+    $result = $query->execute();
+    foreach ($result as $row)
+      $variables['query'][$row->type][] = $row->title;
 		$block['subject'] = t('OpenDTP JSTree');
 		$block['content'] = theme('opendtp_jstree', $variables);
 		return $block;
