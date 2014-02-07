@@ -18,11 +18,11 @@
               ?>
             </ul>
           </li>
-          <li>Master
+          <li>Gallery
             <ul>
               <?php 
-              if ($query['master'])
-                foreach ($query['master'] as $key)
+              if ($query['gallery'])
+                foreach ($query['gallery'] as $key)
                  echo "<li>" . $key . "</li>";
               ?>
             </ul>
