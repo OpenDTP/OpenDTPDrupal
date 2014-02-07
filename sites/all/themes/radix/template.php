@@ -45,8 +45,11 @@ function radix_css_alter(&$css) {
  * Implements template_preprocess_page().
  */
 function radix_preprocess_page(&$variables) {
+  global $base_url;
+
   // Add Bootstrap JS.
-  drupal_add_js('http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js', 'external');
+  $base = parse_url($base_url);
+  drupal_add_js($base['scheme'] . '://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js', 'external');
 
   // Add CSS for Font Awesome
   // drupal_add_css('//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css', 'external');
@@ -82,4 +85,13 @@ function radix_preprocess_page(&$variables) {
 
   // Add a copyright message.
   $variables['copyright'] = t('Drupal is a registered trademark of Dries Buytaert.');
+
+  // Display a message if Sass has not been compiled.
+  $stylesheet_path = path_to_theme() . '/assets/stylesheets/screen.css';
+  if (!file_exists($stylesheet_path)) {
+    drupal_set_message(t('It looks like %path has not been created yet. Run <code>@command</code> in your theme directory to create it.', array(
+      '%path' => $stylesheet_path,
+      '@command' => 'compass watch',
+    )), 'error');
+  }
 }
