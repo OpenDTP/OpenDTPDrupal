@@ -1,5 +1,5 @@
 name        = Radix
-description = A Drupal theme with Bootstrap and SASS
+description = A Drupal theme with Bootstrap and Sass.
 screenshot  = screenshot.png
 core        = 7.x
 
@@ -23,9 +23,9 @@ features[] = logo
 features[] = name
 features[] = favicon
 
-; Information added by drupal.org packaging script on 2013-09-08
-version = "7.x-2.0-beta5"
+; Information added by Drupal.org packaging script on 2014-02-07
+version = "7.x-2.0"
 core = "7.x"
 project = "radix"
-datestamp = "1378637221"
+datestamp = "1391771905"
 
