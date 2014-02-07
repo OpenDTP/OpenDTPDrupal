@@ -18,14 +18,14 @@
               ?>
             </ul>
           </li>
-<!--           <li>Master
+/*          <li>Master
             <ul>
               <?php 
                 foreach ($query['master'] as $key)
                  echo "<li>" . $key . "</li>";
               ?>
             </ul>
-          </li> -->
+          </li>*/
           <li>Page
             <ul>
               <?php 
