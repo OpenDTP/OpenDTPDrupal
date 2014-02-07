@@ -18,14 +18,15 @@
               ?>
             </ul>
           </li>
-/*          <li>Master
+          <li>Master
             <ul>
               <?php 
+              if ($query['master'])
                 foreach ($query['master'] as $key)
                  echo "<li>" . $key . "</li>";
               ?>
             </ul>
-          </li>*/
+          </li>
           <li>Page
             <ul>
               <?php 
