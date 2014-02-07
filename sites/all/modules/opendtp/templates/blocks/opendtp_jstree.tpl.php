@@ -18,15 +18,6 @@
               ?>
             </ul>
           </li>
-          <li>Gallery
-            <ul>
-              <?php 
-              if ($query['gallery'])
-                foreach ($query['gallery'] as $key)
-                 echo "<li>" . $key . "</li>";
-              ?>
-            </ul>
-          </li>
           <li>Page
             <ul>
               <?php 
