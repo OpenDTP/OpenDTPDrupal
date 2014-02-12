@@ -2,15 +2,14 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>jsTree test</title>
 		<link rel="stylesheet" href=<?php echo $module_path; ?>/jstree/dist/themes/default/style.min.css />
 </head>
 <body>
   <div id="jstree">
     <ul>
-      <li>Root
+      <li data-jstree='{"opened":true,"selected":true,"icon":<?php echo $module_path; ?>/assets/icons/root.png}>Root
         <ul>
-          <li data-jstree='{"icon":"<?php echo $module_path; ?>/assets/icons/article.png"}>Article
+          <li data-jstree='{"icon":<?php echo $module_path; ?>/assets/icons/article.png}>Article
             <ul>
               <?php 
                 foreach ($query['article'] as $key)
@@ -18,7 +17,7 @@
               ?>
             </ul>
           </li>
-          <li data-jstree='{"icon":"<?php echo $module_path; ?>/assets/icons/page.png"}>Page
+          <li data-jstree='{"icon":<?php echo $module_path; ?>/assets/icons/page.png}>Page
             <ul>
               <?php 
                 foreach ($query['page'] as $key)
