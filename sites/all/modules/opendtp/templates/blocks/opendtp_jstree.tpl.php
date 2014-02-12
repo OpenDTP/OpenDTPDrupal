@@ -3,7 +3,7 @@
     <ul>
       <li data-jstree='{'opened':true,'selected':true,'icon':<?php echo $module_path; ?>/assets/icons/root.png}'>Root
         <ul>
-          <li data-jstree='{'icon':<?php echo $module_path; ?>/assets/icons/article.png}'>Article
+          <li data-jstree='{'icon':'<?php echo $module_path; ?>/assets/icons/article.png'}'>Article
             <ul>
               <?php 
                 foreach ($query['article'] as $key)
@@ -11,7 +11,7 @@
               ?>
             </ul>
           </li>
-          <li data-jstree='{'icon':<?php echo $module_path; ?>/assets/icons/page.png}'>Page
+          <li data-jstree={'icon':<?php echo $module_path; ?>/assets/icons/page.png}>Page
             <ul>
               <?php 
                 foreach ($query['page'] as $key)
