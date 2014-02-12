@@ -10,7 +10,7 @@
     <ul>
       <li>Root
         <ul>
-          <li>Article
+          <li data-jstree='{"icon":"<?php echo $module_path; ?>/assets/icons/article.png"}>Article
             <ul>
               <?php 
                 foreach ($query['article'] as $key)
@@ -18,7 +18,7 @@
               ?>
             </ul>
           </li>
-          <li>Page
+          <li data-jstree='{"icon":"<?php echo $module_path; ?>/assets/icons/page.png"}>Page
             <ul>
               <?php 
                 foreach ($query['page'] as $key)
