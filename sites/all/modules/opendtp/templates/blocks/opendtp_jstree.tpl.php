@@ -1,10 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-		<link rel="stylesheet" href=<?php echo $module_path; ?>/jstree/dist/themes/default/style.min.css />
-</head>
-<body>
+<link rel="stylesheet" href=<?php echo $module_path; ?>/jstree/dist/themes/default/style.min.css />
   <div id="jstree">
     <ul>
       <li data-jstree='{"opened":true,"selected":true,"icon":<?php echo $module_path; ?>/assets/icons/root.png}'>Root
@@ -41,5 +35,3 @@
     });
   });
   </script>
-</body>
-</html>
