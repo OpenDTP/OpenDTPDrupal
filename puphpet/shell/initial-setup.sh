@@ -18,8 +18,6 @@ if [[ ! -f /.puphpet-stuff/initial-setup-repo-update ]]; then
 	if [ "${OS}" == 'debian' ] || [ "${OS}" == 'ubuntu' ]; then
 		echo "Running initial-setup apt-get update"
 		apt-get update > /dev/null
-		echo "Running initial-setup apt-get upgrade"
-		apt-get upgrade -y > /dev/null
 		touch /.puphpet-stuff/initial-setup-repo-update
 		echo "Finished running initial-setup apt-get update"
 	elif [[ "${OS}" == 'centos' ]]; then
