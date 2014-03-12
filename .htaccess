@@ -16,6 +16,18 @@ Options +FollowSymLinks
 # Make Drupal handle any 404 errors.
 ErrorDocument 404 /index.php
 
+# Redirect Git folders to 404
+RedirectMatch 404 "/.git"
+RedirectMatch 404 "/.git(.*)"
+
+# Redirect Vagrant folders to 404
+RedirectMatch 404 "/.vagrant"
+RedirectMatch 404 "/puphpet"
+RedirectMatch 404 "/Vagrantfile"
+
+# Redirecting data folder to 404
+RedirectMatch 404 "/data"
+
 # Set the default handler.
 DirectoryIndex index.php index.html index.htm
 
